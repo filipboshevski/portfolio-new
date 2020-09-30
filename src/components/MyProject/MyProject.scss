@@ -1,0 +1,132 @@
+@import '../../sassutils/master';
+
+.myproject {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+    &__heading {
+        color: $color-heading;
+        font-size: 2.7rem;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0 1px 3px rgba(0,0,0, .4);
+        margin-bottom: 4rem;
+
+        @media screen and (max-width: 800px) {
+            font-size: 200%;
+        }
+
+        &::before {
+            content: '';
+            z-index: -1;
+            width: 22rem;
+            height: 3rem;
+            background-color: $color-primary;
+            position: absolute;
+            transform: rotate(-2.5deg);
+            box-shadow: 0 1px 3px rgba(0,0,0, .4);
+            @media screen and (max-width: 800px) {
+                width: 17rem;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        padding: 0 18rem;
+        color: $color-paragraph;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 800px) {
+            padding: 0 10rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 0 4rem;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        border-radius: 3px;
+        margin-right: 2rem;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__description {
+        margin-left: 1rem;
+        font-size: 1.34rem;
+        line-height: 1.6;
+
+        @media screen and (max-width: 800px) {
+            font-size: 1.15rem;
+        }
+    }
+
+    &__description-tech {
+        margin-top: 2.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        font-size: 1.35rem;
+
+        @media screen and (max-width: 800px) {
+            font-size: 1.15rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        margin-top: 3.2rem;
+    }
+
+    &__button {
+        width: 13rem;
+        font-size: 1.3rem;
+        padding: .6rem .5rem;
+        fill: $color-white;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-top: -.15rem;
+            margin-right: .7rem;
+        }
+
+        &-chain {
+            display: flex;
+            align-items: center;
+        }
+
+        &-github {
+            display: flex;
+            align-items: center;
+            border: 1px solid $color-white;
+            color: $color-white;
+            fill: $color-white;
+
+            &:hover {
+                border-color: $color-grey-dark-1;
+                color: $color-grey-dark-1;
+                fill: $color-grey-dark-1;
+                background-color: $color-white;
+            }
+        }
+    }
+}

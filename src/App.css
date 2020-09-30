@@ -1,0 +1,30 @@
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+    transform: translateX(120vw);
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    position: relative;
+    transform: translateX(0);
+    transition: transform 900ms cubic-bezier(.53,.09,.03,1.07) 450ms;
+}
+
+.fade-exit {
+    transform: translateX(0);
+    position: absolute;
+    top: 0;
+    left: 10rem;
+}
+
+.fade-exit.fade-exit-active {
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    transform: translateX(-120vw);
+    transition: transform 900ms cubic-bezier(.53,.09,.03,1.07);
+}
+
+.transition {
+    width: 100%;
+}

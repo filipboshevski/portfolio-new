@@ -1,0 +1,47 @@
+@import '../../sassutils/master';
+
+.custom-button {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(1) rotate(0);
+    transition: all .3s;
+    box-shadow: none;
+    text-decoration: none;
+    background-color: transparent;
+    width: 100%;
+    padding: .7rem 1rem;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    font-size: 1.9rem;
+    letter-spacing: 1.2px;
+    
+    @media screen and (max-width: 1100px) {
+        font-size: 1.45rem;
+        padding: .7rem 0;
+    }
+
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
+
+    &-fill {
+        background-color: $color-primary;
+        color: $color-white;
+        width: 100%;
+        padding: .7rem 2rem;
+        @media screen and (max-width: 1100px) {
+            padding: .7rem 0;
+        }
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        transform: scale(1.15) rotate(5deg);
+        box-shadow: 0 1px 16px rgba(119, 54, 54, 0.4);
+    }
+
+}
