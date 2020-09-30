@@ -17,7 +17,7 @@ export const fetchingProjectsFailure = error => ({
 export const fetchProjects = () => dispatch => {
     dispatch(startFetchingProjects());
 
-    Axios.get('/projects')
+    Axios.get('http://34.69.177.33/projects')
     .then(response => {
         dispatch(fetchingProjectsSuccess(response.data));
     })
