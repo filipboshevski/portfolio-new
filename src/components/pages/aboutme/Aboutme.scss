@@ -37,7 +37,7 @@
     }
 
     @media screen and (max-width: 34.375em) {
-        width: 44rem;
+        width: 100%;
     }
 
     &__content {
@@ -215,7 +215,6 @@
 
         @media screen and (max-width: 34.375em) {
             padding-left: 0;
-            width: 100%;
         }
     }
 
