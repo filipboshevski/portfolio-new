@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.scss';
 import {ReactComponent as Github} from '../../assets/github.svg';
 import {ReactComponent as Linkedin} from '../../assets/linkedin.svg';
@@ -43,7 +43,27 @@ const Header = () => {
                     </ul>
                 </ul>
             </nav>
-            <div className='header__navigation-menu'></div>
+            <div className='header__navigation-menu'>
+                <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon">
+                            &nbsp;
+                        </span>
+                    </label>
+                    <div class="navigation__background">&nbsp;</div>
+
+                    <nav class="navigation__nav">
+                        <ul class="navigation__list">
+                            <li clas="navigation__item u-margin-bottom-1"><Link to='/' class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Home</Link></li>
+                            <li clas="navigation__item u-margin-bottom-1"><Link to='/mywork' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>My Work</Link></li>
+                            <li clas="navigation__item u-margin-bottom-1"><Link to='/aboutme' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>About Me</Link></li>
+                            <li clas="navigation__item u-margin-bottom-1"><Link to='contact' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Contact</Link></li>
+                            <li clas="navigation__item u-margin-bottom-1"><Link to='/blog' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Blog</Link></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     )
 }

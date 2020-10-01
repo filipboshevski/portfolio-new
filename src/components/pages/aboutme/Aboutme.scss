@@ -1,0 +1,225 @@
+@import '../../../sassutils/master';
+
+.aboutme {
+    background-color: $color-grey-dark-1;
+    width: 127rem;
+    height: 100%;
+    margin-left: 9.55rem;
+    display: flex;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+        /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px grey; 
+        border-radius: 10px;
+    }
+    
+        /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgb(189, 189, 189); 
+        border-radius: 10px;
+    }
+    
+        /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgb(7, 7, 7); 
+    }
+
+    @media screen and (max-width: 68.75em) {
+        flex-direction: column;
+        padding-top: 6rem;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 34.375em) {
+        width: 44rem;
+    }
+
+    &__content {
+        display: flex;
+
+        @media screen and (max-width: 68.75em) {
+            width: 66rem;
+        }
+
+        @media screen and (max-width: 46.875em) {
+            width: 57rem;
+        }
+
+        @media screen and (max-width: 34.375em) {
+            width: 44rem;
+        }
+
+        @media screen and (max-width: 28.125em) {
+            width: 35rem;
+        }
+    }
+
+    &__buttons {
+        width: 60%;
+        margin-left: 2rem;
+        margin-top: 4rem;
+
+        @media screen and (max-width: 68.75em) {
+            width: 70%;
+        }
+        
+        @media screen and (max-width: 34.375em) {
+            width: 90%;
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 25em) {
+            display: flex;
+            flex-direction: column;
+            margin-left: 7rem;
+        }
+    }
+
+    &__button {
+        font-size: 1.6rem;
+        padding: .7rem 1.7rem;
+
+        @media screen and (max-width: 68.75em) {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 34.375em) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: 25em) {
+            width: 45%;
+            margin-bottom: 2rem;
+        }
+
+        &-1 {
+            font-weight: 700;
+            width: 71%;
+
+            @media screen and (max-width: 68.75em) {
+                // width: 40%;
+            }
+
+            @media screen and (max-width: 34.375em) {
+                width: 50%;
+                margin-right: 2rem !important;
+            }
+
+            @media screen and (max-width: 25em) {
+                width: 55%;
+                margin-right: 0 !important;
+            }
+        }
+
+        &-2 {
+            @media screen and (max-width: 68.75em) {
+                // width: 40%;
+            }
+
+            @media screen and (max-width: 34.375em) {
+                width: 58%;
+            }
+
+            @media screen and (max-width: 25em) {
+                width: 55%;
+            }
+        }
+    }
+
+    &__heading {
+        max-width: 78rem;
+        display: block;
+
+        @media screen and (max-width: 80.75em) {
+            max-width: 70rem;
+        }
+
+        @media screen and (max-width: 68.75em) {
+            max-width: 100vw;
+        }
+
+        @media screen and (max-width: 34.375em) {
+            margin-left: 5rem;
+        }
+
+        @media screen and (max-width: 25em) {
+            margin-left: 3rem;
+        }
+    }
+
+    &__img {
+        margin-top: 4rem;
+        width: 30%;
+        @media screen and (max-width: 80.75em) {
+            width: 35%;
+            padding-right: 7rem;
+        }
+
+        @media screen and (max-width: 68.75em) {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 3rem;
+            padding-right: 0;
+        }
+    }
+
+    &__heading-primary {
+        font-size: 6.5rem;
+        color: $color-primary;
+        margin-left: 2rem;
+        margin-top: -1.5rem;
+        display: flex;
+        align-items: flex-end;
+
+        @media screen and (max-width: 68.75em) {
+            font-size: 5.5rem;
+        }
+
+        @media screen and (max-width: 46.875em) {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (max-width: 34.375em) {
+            margin-left: 0;
+        }
+    }
+
+    &__tag {
+        @media screen and (max-width: 46.875em) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__paragraph {
+        padding: 2rem 3rem 0 0;
+        font-family: 'Roboto', sans-serif;
+        color: $color-white;
+        font-weight: 300;
+        font-size: 1.6rem;
+        padding-left: 2rem;
+        line-height: 1.6;
+
+        @media screen and (max-width: 68.75em) {
+            font-size: 1.45rem;
+        }
+
+        @media screen and (max-width: 46.875em) {
+            font-size: 1.3rem;
+        }
+
+        @media screen and (max-width: 34.375em) {
+            padding-left: 0;
+        }
+    }
+
+    &__heading-body {
+        margin-top: -.7rem;
+        width: 180rem;
+    }
+}

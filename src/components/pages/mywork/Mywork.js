@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MyProject from '../../MyProject/MyProject';
 import project1 from '../../../assets/project1.png';
 import project2 from '../../../assets/project2.png';
@@ -14,6 +14,11 @@ import Spinner from '../../alone-spinner/Spinner';
 const imgs = [project1, project2, project3, project4, project5];
 
 const MyWork = ({projects}) => {
+
+    useEffect(() => {
+        document.title = 'My Work | Full-Stack Developer';
+    }, []);
+
     return (
         <div className='mywork'>
             <h1 className='mywork__heading'>Portfolio</h1>

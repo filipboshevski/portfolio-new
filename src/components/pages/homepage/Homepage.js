@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../../custom-button/CustomButton.scss';
 import './Homepage.scss';
 
 const HomePage = () => {
+
+    useEffect(() => {
+        document.title = 'Filip Boshevski | Full-Stack Developer';
+    }, []);
 
     return (
         <div className='homepage'>

@@ -287,14 +287,15 @@
         animation-fill-mode: forwards;
         display: inline-block;
 
-        @media screen and (max-width: 56.25em) {
-            animation: typewriter-3-900px 1s steps(44) 2s 1 normal both,
+        
+        @media screen and (max-width: 68.75em) {
+            animation: typewriter-3-1100px 1s steps(44) 2s 1 normal both,
             blinkTextCursor 300ms steps(44) 2s 5;
             animation-fill-mode: forwards;
         }
-
-        @media screen and (max-width: 68.75em) {
-            animation: typewriter-3-1100px 1s steps(44) 2s 1 normal both,
+        
+        @media screen and (max-width: 56.25em) {
+            animation: typewriter-3-900px 1s steps(44) 2s 1 normal both,
             blinkTextCursor 300ms steps(44) 2s 5;
             animation-fill-mode: forwards;
         }

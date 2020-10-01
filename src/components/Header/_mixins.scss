@@ -1,0 +1,48 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+    MEDIA QUERIES MANAGER
+    0px - 600px: Phone,
+    601px - 900px: Tablet-Portrait,
+    901 - 1200px: Tablet-Landscape,
+    1201 - 1800px: Normal Style Design,
+    1800px+: Big Desktop
+
+    $platform Options:
+    - phone,
+    - tab-port, 
+    - tab-land, 
+    - big-desktop
+*/
+
+@mixin respond($platform) {
+
+    @if $platform == phone {
+        @media (max-width: 37.5em) { @content }; //600px
+    }
+
+    @if $platform == tab-port {
+        @media (max-width: 56.25em) { @content }; //900px
+    }
+
+    @if $platform == tab-land {
+        @media (max-width: 75em) { @content }; //1200px
+    }
+
+    @if $platform == big-desktop {
+        @media (min-width: 112.5em) { @content }; //1800px
+    }
+}

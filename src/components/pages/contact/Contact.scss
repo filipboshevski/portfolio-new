@@ -1,0 +1,108 @@
+@import '../../../sassutils/master';
+
+.contact {
+    background-color: $color-grey-dark-1;
+    width: 127rem;
+    height: 100%;
+    margin-left: 9.55rem;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 68.75em) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 4rem;
+        padding-top: 7rem;
+    }
+
+    @media screen and (max-width: 25em) {
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    &__closing {
+        padding-left: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    &__heading-body {
+        max-width: 60rem;
+    }
+
+    &__paragraph {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    &__form {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 2rem;
+
+        @media screen and (max-width: 34.375em) {
+            margin-left: 0;
+        }
+
+        &-button {
+            width: 23%;
+            font-size: 1.6rem;
+        }
+
+        &-1 > *, 
+        &-2 > * {
+            border: 0;
+            background: $color-form;
+            height: 4rem;
+            font-size: 1.6rem;
+            color: $color-form-text;
+            padding: 0 2rem;
+            z-index: 999;
+            margin-bottom: 1rem;
+        }
+
+        &-name {
+            width: 35%;
+            margin-right: 1rem;
+
+            @media screen and (max-width: 34.375em) {
+                
+            }
+
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-email {
+            width: 60%;
+
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-subject {
+            width: 96.7%;
+
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-message {
+            width: 96.7%;
+            height: 15rem;
+            padding-top: 1.5rem;
+
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

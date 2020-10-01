@@ -8,10 +8,13 @@ import './App.css';
 import { connect } from 'react-redux';
 import { fetchProjects } from './redux/projects/projectActions';
 import { createStructuredSelector } from 'reselect';
-import { selectIsFetching } from './redux/projects/projectSelectors';
+import { selectIsFetching, selectProjects } from './redux/projects/projectSelectors';
 import Spinner from './components/alone-spinner/Spinner';
+import Aboutme from './components/pages/aboutme/Aboutme';
+import Contact from './components/pages/contact/Contact';
+import Blog from './components/pages/blog/Blog';
 
-const App = ({isFetching, fetchProjects}) => {
+const App = ({isFetching, projects, fetchProjects}) => {
 
     useEffect(() => {
         fetchProjects();
@@ -27,6 +30,9 @@ const App = ({isFetching, fetchProjects}) => {
                             <Switch location={location}>
                                 <Route exact path='/' component={HomePage} />
                                 <Route exact path='/mywork' component={MyWork} />
+                                <Route exact path='/aboutme' component={Aboutme} />
+                                <Route exact path='/contact' component={Contact} />
+                                <Route exact path='/blog' component={Blog} />
                             </Switch>
                         </CSSTransition>
                     </TransitionGroup>
@@ -37,7 +43,8 @@ const App = ({isFetching, fetchProjects}) => {
 }
 
 const mapStateToProps = createStructuredSelector({
-    isFetching: selectIsFetching
+    isFetching: selectIsFetching,
+    projects: selectProjects
 })
 
 const mapDispatchToProps = dispatch => ({
