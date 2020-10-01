@@ -6,11 +6,32 @@
     height: 100%;
     overflow: hidden;
     margin-left: 9.55rem;
+
+    &__buttons {
+        @media screen and (max-width: 25em) {
+            width: 89% !important;
+            margin-left: 1rem !important;
+        }
+    }
     
     @media screen and (max-width: 68.75em) {
+        flex-direction: column;
         padding-top: 5rem;
         width: 100%;
         margin-left: 0;
+    }
+
+    @media screen and (max-width: 48.75em) {
+        padding-left: 6rem;
+        padding-top: 10rem;
+    }
+
+    @media screen and (max-width: 34.375em) {
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .content {
@@ -29,9 +50,14 @@
             right: -33.9rem;
         }
 
-        @media screen and (max-width: 34.375em) {
-            top: 0;
-            right: -33.9rem;
+        @media screen and (max-width: 35em) {
+            position: relative;
+            top: -30rem;
+        }
+        
+        @media screen and (max-width: 35em) {
+            position: relative;
+            top: -20rem;
         }
 
         &__img-big {
@@ -52,8 +78,25 @@
                 width: 100rem;
             }
 
-            @media screen and (max-width: 46.875em ) { //750px
-                width: 90%;
+            @media screen and (max-width: 48.750em ) { //750px
+                position: relative;
+                top: 30rem;
+                right: 20rem;
+                width: 80rem;
+            }
+
+            @media screen and (max-width: 35em) {
+                position: relative;
+                top: -30rem;
+                right: 40rem;
+                width: 80rem;
+            }
+            
+            @media screen and (max-width: 25em) {
+                position: relative;
+                top: -30rem;
+                right: 40rem;
+                width: 80rem;
             }
         }
 
@@ -72,6 +115,29 @@
             
             @media screen and (max-width: 68.75em) {
                 font-size: 55rem;
+                position: relative;
+                bottom: 40rem;
+                left: 50rem;
+            }
+
+            @media screen and (max-width: 48.75em) {
+                font-size: 60rem;
+                position: relative;
+                bottom: 10rem;
+                left: -10rem;
+            }
+
+            @media screen and (max-width: 35em) {
+                position: relative;
+                bottom: 85rem;
+                right: 35rem;
+            }
+            
+            @media screen and (max-width: 25em) {
+                position: relative;
+                bottom: 75rem;
+                right: 35rem;
+                font-size: 45rem;
             }
 
         }
@@ -88,6 +154,7 @@
 
     &__closing-tags {
         margin-top: 7rem;
+        z-index: 100;
     }
 
     &__tag {
@@ -95,9 +162,10 @@
         font-family: 'La Belle Aurore', cursive, sans-serif;
         color: $color-tags;
         font-size: 2.5rem;
+        z-index: 10;
 
         &-heading {
-            @media screen and (max-width: 46.875em ) { //750px
+            @media screen and (max-width: 48.750em ) { //750px
                 font-size: 2rem;
             }
 
@@ -137,7 +205,7 @@
         margin-left: 7rem;
         margin-top: 1rem;
 
-        @media screen and (max-width: 46.875em) {
+        @media screen and (max-width: 48.750em) {
             margin-left: 0;
         }
     }
@@ -153,6 +221,8 @@
         margin-left: 3rem;
         font-size: 1.8rem;
         color: $color-description;
+        z-index: 200;
+        position: relative;
 
         @media screen and (max-width: 46.857em) {
             font-size: 1.4rem;
@@ -351,7 +421,7 @@
     from {
         width: 0;
     } to {
-        width: 3.9rem;
+        width: 4rem;
     }
 }
 
@@ -401,7 +471,7 @@
     }
 
     to {
-        width: 6.6rem;
+        width: 8rem;
     }
 }
 

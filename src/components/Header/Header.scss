@@ -24,6 +24,10 @@
         position: fixed;
     }
 
+    @media screen and (max-width: 25em) {
+        width: 36rem;
+    }
+
     &__social-container {
         list-style: none;
         display: flex;
@@ -40,7 +44,7 @@
             margin-top: .9rem;
         }
 
-        @media screen and (max-width: 46.875em) {
+        @media screen and (max-width: 48.750em) {
             display: none;
         }
     }
@@ -130,7 +134,7 @@
             align-self: center;
             margin-right: 3rem;
 
-            @media screen and (max-width: 46.875em) {
+            @media screen and (max-width: 48.750em) {
                 display: flex;
             }
         }
@@ -150,7 +154,7 @@
             padding-top: 2rem;
         }
 
-        @media screen and (max-width: 46.875em) {
+        @media screen and (max-width: 48.750em) {
             display: none;
         }
     }
@@ -286,7 +290,7 @@
             color: $color-white;
             padding: 1.2rem 2rem;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 220%;
+            background-size: 230.5%;
             transition: all .6s;
         }
 

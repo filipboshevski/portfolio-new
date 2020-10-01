@@ -38,6 +38,10 @@
 
     @media screen and (max-width: 34.375em) {
         width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__content {

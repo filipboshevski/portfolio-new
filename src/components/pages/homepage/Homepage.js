@@ -25,7 +25,7 @@ const HomePage = () => {
                             <span className='typewriter typewriter-3'>a Full-Stack Developer.</span><span className='heading-primary__tag heading-primary__tag-heading' style={{width: '3rem', display: 'inline-block'}}>/ h1</span>
                         </p>
                         <span className='custom-heading__desc'>Full-Stack Developer | UI/UX Designer | Freelancer</span>
-                        <div className='custom-heading__buttons'>
+                        <div className='custom-heading__buttons homepage__buttons'>
                             <Link className='custom-button custom-button-fill custom-heading__button' to='/mywork'>View Projects</Link>
                             <Link className='custom-button custom-heading__button' to='/aboutme'>About Me</Link>
                         </div>
