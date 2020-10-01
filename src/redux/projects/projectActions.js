@@ -15,13 +15,13 @@ export const fetchingProjectsFailure = error => ({
 });
 
 export const fetchProjects = () => dispatch => {
-    dispatch(startFetchingProjects());
+    // dispatch(startFetchingProjects());
 
-    Axios.get('https://filipportfolio.cloudns.cl/projects')
-    .then(response => {
-        dispatch(fetchingProjectsSuccess(response.data));
-    })
-    .catch(err => {
-        dispatch(fetchingProjectsFailure(err));
-    });
+    // Axios.get('https://filipportfolio.cloudns.cl/projects')
+    // .then(response => {
+    //     dispatch(fetchingProjectsSuccess(response.data));
+    // })
+    // .catch(err => {
+    //     dispatch(fetchingProjectsFailure(err));
+    // });
 };
