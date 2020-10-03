@@ -44,22 +44,22 @@ const Header = () => {
                 </ul>
             </nav>
             <div className='header__navigation-menu'>
-                <div class="navigation">
-                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-                    <label for="navi-toggle" class="navigation__button">
-                        <span class="navigation__icon">
+                <div className="navigation">
+                    <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
+                    <label htmlFor="navi-toggle" className="navigation__button">
+                        <span className="navigation__icon">
                             &nbsp;
                         </span>
                     </label>
-                    <div class="navigation__background">&nbsp;</div>
+                    <div className="navigation__background">&nbsp;</div>
 
-                    <nav class="navigation__nav">
-                        <ul class="navigation__list">
-                            <li clas="navigation__item u-margin-bottom-1"><Link to='/' class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Home</Link></li>
-                            <li clas="navigation__item u-margin-bottom-1"><Link to='/mywork' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>My Work</Link></li>
-                            <li clas="navigation__item u-margin-bottom-1"><Link to='/aboutme' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>About Me</Link></li>
-                            <li clas="navigation__item u-margin-bottom-1"><Link to='contact' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Contact</Link></li>
-                            <li clas="navigation__item u-margin-bottom-1"><Link to='/blog' href="#" class="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Blog</Link></li>
+                    <nav className="navigation__nav">
+                        <ul className="navigation__list">
+                            <li className="navigation__item u-margin-bottom-1"><Link to='/' className="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Home</Link></li>
+                            <li className="navigation__item u-margin-bottom-1"><Link to='/mywork' href="#" className="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>My Work</Link></li>
+                            <li className="navigation__item u-margin-bottom-1"><Link to='/aboutme' href="#" className="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>About Me</Link></li>
+                            <li className="navigation__item u-margin-bottom-1"><Link to='contact' href="#" className="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Contact</Link></li>
+                            <li className="navigation__item u-margin-bottom-1"><Link to='/blog' href="#" className="navigation__link" onClick={() => document.getElementsByClassName('navigation__checkbox')[0].checked = false}>Blog</Link></li>
                         </ul>
                     </nav>
                 </div>
