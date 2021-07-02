@@ -26,10 +26,10 @@ const Aboutme = () => {
                         </p>
                         <p className='aboutme__paragraph'>
                             In the last 3 years, I've been all over the place with studying every field that i've lost track. I'm currently an expert in .NET (C#) and also JavaScript for front end.
-                            I started my programming career in Java, but I've moved to a lot of places since then. I'm currently learning Data Science and Machine Learning for my upcoming project in Pythonß.
+                            I started my programming career in Java, but I've moved to a lot of places since then. I'm currently learning Data Science and Machine Learning for my upcoming project in Python.
                         </p>
-                        <p className='aboutme__paragraph'> Most of the projects here are done in either React or Angular, and only few of them are fully built with a backend architecture. I've got plenty of projects lying around which I've yet to upload to my repository, although I'm set on one particular project that i believe will outdo the others.</p>
-                        <p className='aboutme__paragraph'> I've studied a lot, but it's still not enough if I want to combine all of it in the project I'm working on. If you wish to check out my available projects, click the link below.</p>
+                        <p className='aboutme__paragraph'> Most of the projects here are done in either React or Angular, and only few of them are fully built with a backend architecture. I've got plenty of projects lying around which I've yet to upload to my repository, although I'm set on one particular project that i believe will outdo the rest.</p>
+                        <p className='aboutme__paragraph'> I've studied a lot, but it's still not enough if I want to combine all of it in the project I'm working on. If you wish to check out my available projects, click the links below.</p>
                         <div className='custom-heading__buttons aboutme__buttons'>
                             <Link className='custom-button custom-button-fill custom-heading__button aboutme__button aboutme__button-1' to='/mywork'>View Projects</Link>
                             <a href='https://github.com/filipboshevski?tab=repositories' target='_blank' rel="noopener noreferrer" className='custom-button custom-heading__button aboutme__button myproject__button-github aboutme__button-2' ><Github className='myproject__button-icon' />ALL PROJECTS</a>
