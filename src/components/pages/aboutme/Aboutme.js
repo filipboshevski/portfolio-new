@@ -21,9 +21,15 @@ const Aboutme = () => {
                     <div className='heading-primary__body aboutme__heading-body'>
                         <span className='heading-primary__tag'>h1</span>
                         <h1 className='aboutme__heading-primary'>About me <span className='heading-primary__tag aboutme__tag'>/ h1</span></h1>
-                        <p className='aboutme__paragraph'>Im a Full-stack developer and UI / UX designer with a great passion for building things with code.</p>
-                        <p className='aboutme__paragraph'>The main area of my expertise is in web technologies. My main stack of technologies is the MERN stack (MongoDB, Express, React and Node). For back end development I mainly use Node Js and sometimes Python (Flask & Django), but i haven't really mastered it well.</p>
-                        <p className='aboutme__paragraph'> I specialize in Java and JavaScript. I'm currently working on learning mobile app development with React Native, as well as cloud services such as Google Cloud Platform and AWS.</p>
+                        <p className='aboutme__paragraph'>
+                            I'm a Full Stack Developer and UI / UX designer with a great passion for building things with code.
+                        </p>
+                        <p className='aboutme__paragraph'>
+                            In the last 3 years, I've been all over the place with studying every field that i've lost track. I'm currently an expert in .NET (C#) and also JavaScript for front end.
+                            I started my programming career in Java, but I've moved to a lot of places since then. I'm currently learning Data Science and Machine Learning for my upcoming project.
+                        </p>
+                        <p className='aboutme__paragraph'> Most of the projects here are done in either React or Angular, and only a few of them are fully built with a backend architecture. I've got plenty of projects lying around which I've yet to upload to my repository, although I'm set on one particular project that i believe will outdo the others.</p>
+                        <p className='aboutme__paragraph'> I've studied a lot and am stying still so i can combine all that in the project I'm working on. If you wish to check out my available projects, click the link below.</p>
                         <div className='custom-heading__buttons aboutme__buttons'>
                             <Link className='custom-button custom-button-fill custom-heading__button aboutme__button aboutme__button-1' to='/mywork'>View Projects</Link>
                             <a href='https://github.com/filipboshevski?tab=repositories' target='_blank' rel="noopener noreferrer" className='custom-button custom-heading__button aboutme__button myproject__button-github aboutme__button-2' ><Github className='myproject__button-icon' />ALL PROJECTS</a>
